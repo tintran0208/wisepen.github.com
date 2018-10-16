@@ -17,6 +17,7 @@ body span {
     transition: 0.3s;
     border-radius: 0
 }
+
 .navbar-expand-md {
     background: #2e4858
 }
@@ -27,7 +28,8 @@ body span {
 
 .nav-link:hover {
     color: #0098ba !important;
-    font-weight: 400
+    font-weight: 400;
+    transition: 0.1s ease-in-out
 }
 
 .nav-link {
@@ -116,9 +118,9 @@ body span {
 }
 
 .page3 .who p {
-    max-width: 560px;
+    max-width: 450px;
     font-size: 20px;
-    color: rgb(46, 72, 88);
+    color: rgba(46, 72, 88, 0.801);
     line-height: 1.2;
     text-align: justify;
     margin-top: 68px
@@ -151,9 +153,9 @@ body span {
 }
 
 .page3 .goal p {
-    max-width: 557px;
+    max-width: 450px;
     font-size: 20px;
-    color: rgb(46, 72, 88);
+    color: rgba(46, 72, 88, 0.801);
     line-height: 1.2;
     text-align: justify;
     text-align-last: right;
@@ -169,7 +171,6 @@ body span {
     display: flex;
     align-items: center;
     text-align: center
-
 }
 
 .page4 .process h2 {
@@ -194,12 +195,12 @@ body span {
 
 .page4 .table .table1,
 .page4 .table .table3 {
-    padding: 3rem 1rem;
+    padding: 2rem 1rem 3rem 1rem;
     background: #fff;
 }
 
 .page4 .table .table2 {
-    padding: 3rem 1rem;
+    padding: 2rem 1rem 3rem 1rem;
     background: #e7f1f8;
 }
 
@@ -216,13 +217,14 @@ body span {
 .page4 .table .table1 p,
 .page4 .table .table2 p,
 .page4 .table .table3 p {
-    color: rgb(46, 72, 88);
+    color: rgba(46, 72, 88, 0.801);
 }
 
 .page5 {
     background: url('../img/our_services.png') no-repeat center center;
     display: flex;
     align-items: center;
+    text-align: center;
     min-height: 338px
 }
 
@@ -234,10 +236,10 @@ body span {
 }
 
 .page5 .btn a {
-    border: 2px solid #fff;
+    border: 2px solid rgba(255, 255, 255, 0.53);
     border-radius: 50px;
-    color: #fff;
-    padding: 18px 57px;
+    color: rgba(255, 255, 255, 0.63);
+    padding: 15px 57px;
     font-size: 18px;
     line-height: 1.2;
     text-align: center;
@@ -251,13 +253,135 @@ body span {
     transition: 0.1s ease-in-out
 }
 
-footer .foot1 {
-    background: #fff;
-    padding: 50px
-}
-
-footer .foot2 {
+.end {
     background: #2e4858;
-    padding: 15px
 }
 
+.end .nav li {
+    padding: 0 50px;
+}
+
+.end .nav li a {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.246;
+}
+
+.end .nav li a:hover {
+    color: #0098ba;
+    text-decoration: none;
+    transition: 0.1s ease-in-out
+}
+
+
+/* SERVICES */
+
+.page1_2 {
+    background: url('../img/services.png') no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 120px
+}
+
+.page1_2 .service h2 {
+    font-size: 40px;
+    color: #fff;
+    font-weight: 700;
+    line-height: 0.6;
+    text-align: center;
+}
+
+.page1_2 .service p {
+    font-size: 20px;
+    color: #fff;
+    line-height: 1.2;
+    text-align: center;
+    margin: 50px 0;
+    letter-spacing: 2px
+}
+
+.page1_2 .menu1,
+.page1_2 .menu2,
+.page1_2 .menu3,
+.page1_2 .menu4 {
+    padding: 2rem 1rem 3rem 1rem;
+    background: #fff;
+    margin: 0 1rem;
+    border-radius: 10px;
+}
+
+.page1_2 .service_menu h5{
+    font-size: 20px;
+    color: rgb(46, 72, 88);
+    line-height: 1.2;
+    text-align: center;
+    font-weight: 600
+}
+
+.page1_2 .service_menu p {
+    color: rgba(46, 72, 88, 0.801);
+}
+
+
+
+.page2_2 {
+    background: #2e4858;
+    display: flex;
+    align-items: center;
+    padding: 100px 0;
+}
+
+.page2_2 .go_pro h2 {
+        font-size: 40px;
+        color: rgb(255, 255, 255);
+        font-weight: bold;
+        line-height: 1.2;
+}
+
+.page2_2 .go_pro p {
+        font-size: 18px;
+        color: rgba(255, 255, 255, 0.502);
+        letter-spacing: 4px
+}
+
+.page2_2 .linka {
+background: #00b3da;
+padding: 1rem 5rem;
+border: 0;
+box-shadow: 0 -4px 0 rgba(0, 0, 0, 0.404) inset;
+color: white;
+border-radius: 10px;
+letter-spacing: 1px;
+font-size: 18px
+}
+
+.page2_2 .linka:hover {
+    background: #0098ba;
+    box-shadow: 0 -4px 0 rgba(0, 0, 0, 0.404) inset;
+    color: white;
+    transition: 0.1s ease-in-out
+}
+
+.page2_2 .linka:active:focus {
+    background: #00b3da;
+    color: white;
+    box-shadow: none;
+    margin-bottom: -3px;
+    margin-top: 3px;
+}
+
+.page3_2 {
+    background: #fff;
+    display: flex;
+    align-items: center;
+    text-align: center
+}
+
+.page3_2 .nav {
+    padding: 10px
+}
