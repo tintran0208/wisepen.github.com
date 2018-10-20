@@ -83,7 +83,9 @@ body span {
     color: rgb(46, 72, 88);
     line-height: 1.4;
     text-align: center;
-    letter-spacing: 2.5px
+    letter-spacing: 2.5px;
+    width: 51%;
+    margin: 0 auto
 }
 
 /* Kết thúc trang 2 */
@@ -228,14 +230,14 @@ body span {
     min-height: 338px
 }
 
-.page5 .sentence {
+.page5 .sentence, .page2_3 .sentence {
     font-size: 25px;
     color: #fff;
     line-height: 1.2;
     text-align: center;
 }
 
-.page5 .btn a {
+.page5 .btn a, .page2_3 .btn a {
     border: 2px solid rgba(255, 255, 255, 0.53);
     border-radius: 50px;
     color: rgba(255, 255, 255, 0.63);
@@ -246,7 +248,7 @@ body span {
 
 }
 
-.page5 .btn a:hover {
+.page5 .btn a:hover, .page2_3 .btn a:hover {
     border: 2px solid #0098ba;
     color: #0098ba;
     text-decoration: none;
@@ -258,17 +260,17 @@ body span {
 }
 
 .end .nav li {
-    padding: 0 50px;
+    padding: 0 2rem
 }
 
-.end .nav li a {
+.end a {
     color: #fff;
     font-size: 18px;
     font-weight: 500;
     line-height: 1.246;
 }
 
-.end .nav li a:hover {
+.end a:hover {
     color: #0098ba;
     text-decoration: none;
     transition: 0.1s ease-in-out
@@ -285,7 +287,7 @@ body span {
     display: flex;
     align-items: center;
     text-align: center;
-    padding: 120px
+    padding: 120px 0
 }
 
 .page1_2 .service h2 {
@@ -302,7 +304,10 @@ body span {
     line-height: 1.2;
     text-align: center;
     margin: 50px 0;
-    letter-spacing: 2px
+    letter-spacing: 2px;
+    max-width: 63%;
+    margin-left: auto;
+    margin-right: auto
 }
 
 .page1_2 .menu1,
@@ -310,8 +315,8 @@ body span {
 .page1_2 .menu3,
 .page1_2 .menu4 {
     padding: 2rem 1rem 3rem 1rem;
-    background: #fff;
     margin: 0 1rem;
+    background: #fff;
     border-radius: 10px;
 }
 
@@ -325,6 +330,7 @@ body span {
 
 .page1_2 .service_menu p {
     color: rgba(46, 72, 88, 0.801);
+    text-align: center;
 }
 
 
@@ -375,13 +381,46 @@ font-size: 18px
     margin-top: 3px;
 }
 
-.page3_2 {
-    background: #fff;
-    display: flex;
-    align-items: center;
-    text-align: center
+.carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='#00b3da' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+   }
+   
+   .carousel-control-next-icon {
+     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='#00b3da' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+   }
+
+.page2_4 img {
+    filter: grayscale(100%);
+    opacity: .5;
+    transition: 0.1s ease-in-out
 }
 
-.page3_2 .nav {
-    padding: 10px
+.page2_4 img:hover {
+    filter: grayscale(0);
+    transition: 0.1s ease-in-out;
+    opacity: 1;
+}
+
+.page2_3 {
+    background: url('../img/our_work.png') no-repeat center center;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    min-height: 338px
+}
+
+
+footer a{
+  text-decoration: none;
+  color: #00b3da
+}
+
+footer .box-part{
+    border-radius:0;
+    padding:20px 10px;
+    margin: 0 auto
+}
+
+footer .fa{
+     color:#fff;
 }
